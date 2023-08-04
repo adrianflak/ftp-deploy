@@ -1,5 +1,9 @@
-on: push
-name: 🚀 Deploy website on push
+
+name: 🚀 ftp-deploy
+on: 
+  pull_request:
+    branches:
+      - main
 jobs:
   web-deploy:
     name: 🎉 Deploy
